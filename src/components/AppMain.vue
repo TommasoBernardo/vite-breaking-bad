@@ -31,10 +31,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-main {
-    height: calc(100% - 80px);
 
-}
 
 .my-background{
     background-color: orange;
