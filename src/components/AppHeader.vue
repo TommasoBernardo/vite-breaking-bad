@@ -1,6 +1,6 @@
 <template>
     <header>
-        <nav class="navbar bg-body-tertiary my-nav-color">
+        <nav class="navbar  my-nav-color">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Yu-Gi-Oh%21_%28Logo%29.jpg/1200px-Yu-Gi-Oh%21_%28Logo%29.jpg"
