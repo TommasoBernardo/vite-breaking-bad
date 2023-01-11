@@ -5,7 +5,7 @@
                 <div class="col-12 bg-dark">
                     <p class="fs-5  text-white">Found {{ store.cardsList.length }} cards</p>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2 d-flex" v-for=" card in store.cardsList">
+                <div class="col-6 col-md-4 col-lg-3 d-flex" v-for=" card in store.cardsList">
                     <div class="card text-bg-white mb-3">
                         <img :src="card.card_images[0].image_url" class="card-img-top" :alt="card.name">
                         <div>
