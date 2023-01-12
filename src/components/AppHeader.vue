@@ -29,13 +29,13 @@ export default {
         }
     },
     methods: {
-    getCards(archetypeInput = 'chaos') {
+    getCards(archetypeInput = 'carte') {
       axios.get(this.apiUrl, {
         params: {
           num: 12,
           offset: 0,
           archetype: archetypeInput,
-          type: 'Effect Monster'
+          type: 'Effect'
         }
       })
         .then((response) => {
