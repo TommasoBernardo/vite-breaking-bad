@@ -1,7 +1,7 @@
 <template>
     <header>
         <nav class="navbar  my-nav-color">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Yu-Gi-Oh%21_%28Logo%29.jpg/1200px-Yu-Gi-Oh%21_%28Logo%29.jpg"
                         alt="" class="img-fluid"> Yu-Gi-Oh Api</a>
@@ -11,8 +11,12 @@
 </template>
 <script>
 import { store } from '../store.js';
+import TypeSelect from './TypeSelect.vue';
 import axios from 'axios';
 export default {
+    components:{
+        TypeSelect,
+    },
     name: 'AppHeader',
     data() {
         return {
