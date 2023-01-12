@@ -16,6 +16,7 @@ export default {
       store,
     }
   },
+  
 }
 </script>
 <style lang="scss">
