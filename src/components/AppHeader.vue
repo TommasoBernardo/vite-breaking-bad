@@ -29,24 +29,24 @@ export default {
         }
     },
     methods: {
-    getCards(archetypeInput = 'alien') {
+    getCards(archetypeInput = 'chaos') {
       axios.get(this.apiUrl, {
         params: {
-        num: 12,
-        offset: 0,
-        archetype: archetypeInput,
-        type: 'Monster'
+          num: 12,
+          offset: 0,
+          archetype: archetypeInput,
+          type: 'Effect Monster'
         }
-    })
+      })
         .then((response) => {
-        this.store.cardsList = (response.data.data);
+          this.store.cardsList = (response.data.data);
         })
         .catch(function (error) {
-        console.error(error);
+          console.error(error);
         })
     },
     getResponse() {
-    console.log('connesione riuscita!')
+      console.log('Connessione riuscita!')
     }
   },
   created() {
