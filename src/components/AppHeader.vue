@@ -14,10 +14,12 @@
 <script>
 import { store } from '../store.js';
 import TypeSelect from './TypeSelect.vue';
+import SelectStyle from './SelectStyle.vue'
 import axios from 'axios';
 export default {
     components:{
         TypeSelect,
+        SelectStyle,
     },
     name: 'AppHeader',
     data() {
@@ -27,13 +29,13 @@ export default {
         }
     },
     methods: {
-    getCards(archetypeInput = 'chaos') {
+    getCards(archetypeInput = 'alien') {
       axios.get(this.apiUrl, {
         params: {
         num: 12,
         offset: 0,
         archetype: archetypeInput,
-        type: 'Effect Monster'
+        type: 'Monster'
         }
     })
         .then((response) => {
