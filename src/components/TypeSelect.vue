@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-3 offset-4">
-                    <select class="form-select-sm" v-model="userInput" v-on:change="$emit('search', userInput)">
+                    <select class="form-select-sm" v-model="Input" v-on:change="$emit('search', Input)">
                         <option selected value="Alien">Alien</option>
                         <option value="Laval">Laval</option>
                         <option value="Vylon">Vylon</option>
@@ -17,10 +17,10 @@
 </template>
 <script>
 export default {
-    name: 'Search',
+    name: 'SelectComponents',
     data() {
         return {
-            userInput: ''
+            Input: ''
         }
     },
 }

@@ -7,7 +7,7 @@
                         alt="" class="img-fluid"> Yu-Gi-Oh Api</a>
             </div>
 
-            <TypeSelect  @search ="searchCharacter()"/>
+            <TypeSelect  @search ="getCards"/>
         </nav>
     </header>
 </template>
