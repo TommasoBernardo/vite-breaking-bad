@@ -6,7 +6,6 @@
                 <div class="col-3 offset-4">
                     <select class="form-select-sm" v-model="Input" v-on:change="$emit('search', Input)">
                         <option selected value="Alien">Alien</option>
-                        <option value="Laval">Laval</option>
                         <option value="Vylon">Vylon</option>
                         <option value="Inzektor">Inzektor</option>
                         <option value="Umi">Umi</option>

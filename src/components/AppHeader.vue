@@ -29,7 +29,7 @@ export default {
         }
     },
     methods: {
-    getCards(archetypeInput = 'chaos') {
+    getCards(archetypeInput = 'Laval') {
       axios.get(this.apiUrl, {
         params: {
           num: 12,
