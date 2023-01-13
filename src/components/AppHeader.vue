@@ -29,10 +29,10 @@ export default {
         }
     },
     methods: {
-    getCards(archetypeInput = 'carte') {
+    getCards(archetypeInput = 'chaos') {
       axios.get(this.apiUrl, {
         params: {
-          num: 12,
+          num: 20,
           offset: 0,
           archetype: archetypeInput,
           type: 'Effect'
@@ -42,11 +42,12 @@ export default {
           this.store.cardsList = (response.data.data);
         })
         .catch(function (error) {
+          // handle error
           console.error(error);
         })
     },
     getResponse() {
-      console.log('Connessione riuscita!')
+      console.log('Connessione riuscita')
     }
   },
   created() {
