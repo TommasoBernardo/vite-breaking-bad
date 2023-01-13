@@ -32,10 +32,10 @@ export default {
     getCards(archetypeInput = 'chaos') {
       axios.get(this.apiUrl, {
         params: {
-          num: 20,
+          num: 12,
           offset: 0,
           archetype: archetypeInput,
-          type: 'Effect'
+          type: 'Effect Monster'
         }
       })
         .then((response) => {
